@@ -1,0 +1,15 @@
+services:
+    apache:
+        build: .
+        #image: ubuntu/apache2
+        container_name: apache
+        networks:
+            - masterportal
+        ports:
+            - 8085:80
+        volumes:
+            - ./web:/var/www/html
+
+networks:
+    masterportal:
+        name: "masterportal"

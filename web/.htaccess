@@ -1,0 +1,16 @@
+Options +FollowSymLinks
+
+ErrorDocument 401 /index.php
+ErrorDocument 404 /index.php
+ErrorDocument 500 /index.php
+
+RewriteEngine On
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d
+
+# RewriteRule ^services(-internet)?.json$ services.php [QSA,L]
+
+RewriteRule ^services-internet.json$ services-internet.json [L]
+RewriteRule ^services-dynamic.json$ services.php [QSA,L]
+RewriteRule ^services-dynamic.json/settings$ services.php?info [QSA,L]

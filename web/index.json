@@ -1,0 +1,16 @@
+{
+    "meldungen": [
+        "Ein zugriffsbeschränkter Prototyp des Masterportals steht <a href=\"Prototyp/\" title=\"Masterportal-Prototyp\" alt=\"Masterportal-Prototyp\">hier</a> zur Verfügung."
+    ],
+    "portale": {
+        "Prototyp/": {
+            "name": "Masterportal-Prototyp",
+            "authentication": "user",
+            "beschreibung": "Ein Prototyp des Masterportals zu Demonstrationszwecken."
+        }
+    },
+    "aktuelle-portale": [
+        "Ahlem/portal-info.json",
+        "Netz/portal-info.json"
+    ]
+}
